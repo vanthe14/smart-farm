@@ -20,7 +20,23 @@
 </head>
 
 <body>
-    <header>gsdgsdgsdgsgdgsdgsdgsdg</header>
+        <%-partial('../common/header')%>
+
+    <h1><%=  __('home') %></h1>
+    <header>
+        <ul>
+            <!-- <img src="/img/flags/<%=  (clanguage) %>.png" alt="<%=  __(clanguage) %>" title="<%=  __(clanguage) %>"> -->
+            <li><a href="#"><%=  __(clanguage) %></a>
+                <ul class="dropdown">
+                    <% languages.forEach(function(lang){ %>
+                        <li><a href="/change-lang/<%= lang %>"><%=  __(lang) %></a></li>
+                         
+                    <% })%>                                                                
+                </ul>
+            </li>
+            
+        </ul>
+    </header>
     <section class="hero-area">
             <%- body %>
      </section>   
