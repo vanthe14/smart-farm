@@ -1,0 +1,14 @@
+var express = require('express')
+var http = require('http')
+
+var app = express();
+
+var homeRoutes = require('./app/routes/homeRoute');
+
+app.use('/',homeRoutes)
+
+// some environment variables
+app.set('port', process.env.PORT || 3000);
+http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+  });
