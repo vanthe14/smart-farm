@@ -1,3 +1,3 @@
 exports.index = function(req, res, next) {
-    res.send("dsfafasfa")
+    res.render('frontend/home/homepage')
 }
