@@ -22,7 +22,7 @@ app.set("views", path.join(__dirname, 'templates'));
 app.use(cookieParser());
 
 i18n.configure({
-    locales: ['en', 'vi'],
+    locales: ['en', 'vi' , 'ja'],
     register: global,
     fallbacks: {'en' : 'vi'},
     cookie: 'language',

@@ -10,7 +10,7 @@ router.get('/', home_controller.index);
 router.use("/change-lang/:lang", (req, res) => { 
     res.cookie('language', req.params.lang, { maxAge: 900000 });
     res.redirect('back');
-    //console.log("hear"+i18n.getLocales())
+   
 });
 
 module.exports = router;
