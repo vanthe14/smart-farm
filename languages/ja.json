@@ -2,6 +2,10 @@
     "en": "英語",
     "vi": "ベトナム",
     "ja":  "日本",
-	"home": "Home",
+    "home": "Home",
+    "USD": "US Dollar",
+	"EUR": "EUR Euro",
+	"Register": "Register",
+	"Sign in": "Sign in",
 	"chat with us": "Chat with us!"
 }
